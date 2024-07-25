@@ -1,3 +1,11 @@
 Flask
 gunicorn
+BeautifulSoup
 apscheduler
+Flask-SQLAlchemy
+Flask-Limiter
+python-dotenv
+beautifulsoup4
+psycopg2-binary
+
+aiohttp
