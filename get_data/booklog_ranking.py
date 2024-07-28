@@ -452,7 +452,7 @@ HEADERS={ "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/53
 def get_book_info(title, author):
     book_data = run_async(fetch_rakuten(title, author))
     if book_data:
-        print("データを取得しました:", book_data)
+        # print("データを取得しました:", book_data)
         return book_data
     else:
         print("データの取得に失敗しました。")

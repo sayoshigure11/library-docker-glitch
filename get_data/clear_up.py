@@ -345,6 +345,6 @@ def merge_data():
                     merged[key]['score'] += item['score']
                 else:
                     merged[key] = item.copy()
-    print(merged)
+    # print(merged)
     final_data_kari = list(merged.values())
     return sorted(final_data_kari, key=lambda x: x['score'], reverse=True)

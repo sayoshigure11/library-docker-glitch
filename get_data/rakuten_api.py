@@ -26,9 +26,9 @@ async def fetch_with_timeout(url, timeout=10):
 async def fetch_rakuten(title, author):
     # キーワードをURLエンコード
     encode_data_title = urllib.parse.quote(title)
-    print("encodeData title:", encode_data_title)
+    # print("encodeData title:", encode_data_title)
     encode_data_author = urllib.parse.quote(author)
-    print("encodeData author:", encode_data_author)
+    # print("encodeData author:", encode_data_author)
 
     # 楽天ブックスAPIのURL
     url = f"https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?format=json&title={encode_data_title}&author={encode_data_author}&applicationId={os.getenv('RAKUTEN_API')}"
@@ -41,7 +41,7 @@ async def fetch_rakuten(title, author):
 
     if result:
         data = result.get('Items')[0]['Item']
-        print("データを取得しました:", data)
+        # print("データを取得しました:", data)
 
         return data
     else:
